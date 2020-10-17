@@ -3,13 +3,13 @@ import {
   fetchMovies,
   fetchGenre,
   fetchMovieByGenre,
-  fetchPersons,
-  fetchTopratedMovie,
+  // fetchPersons,
+  // fetchTopratedMovie,
 } from "../../service";
 
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import { Link } from "react-router-dom";
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RBCarousel from "react-bootstrap-carousel";
 
@@ -17,16 +17,16 @@ export function Home() {
   const [nowPlaying, setNowPlaying] = useState([]);
   const [genres, setGenres] = useState([]);
   const [movieByGenre, setMovieByGenre] = useState([]);
-  const [persons, setPersons] = useState([]);
-  const [topRated, setTopRated] = useState([]);
+  // const [persons, setPersons] = useState([]);
+  // const [topRated, setTopRated] = useState([]);
 
   useEffect(() => {
     const fetchAPI = async () => {
       setNowPlaying(await fetchMovies());
       setGenres(await fetchGenre());
       setMovieByGenre(await fetchMovieByGenre(28));
-      setPersons(await fetchPersons());
-      setTopRated(await fetchTopratedMovie());
+      // setPersons(await fetchPersons());
+      // setTopRated(await fetchTopratedMovie());
     };
 
     fetchAPI();

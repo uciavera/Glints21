@@ -6,7 +6,7 @@ import './login.css'
 
 function Login() {
     const [modalIsOpen, setmodalIsOpen] = useState(false);
-    const [SignUpIsOpen, setSignUpIsOpen] = useState(false);
+    // const [SignUpIsOpen, setSignUpIsOpen] = useState(false);
     const [SignInIsOpen, setSignInIsOpen] = useState(true);
 
     const [User, setUser] = useState({
@@ -33,7 +33,7 @@ function Login() {
                 </span>
 
                 <Modal className='modalLogin' isOpen={modalIsOpen}
-                    onRequestClose={() => { setmodalIsOpen(false); setSignUpIsOpen(false); setSignInIsOpen(true) }}
+                    onRequestClose={() => { setmodalIsOpen(false); ; setSignInIsOpen(true) }}
                     style={
                         {
                             content: {
@@ -80,7 +80,7 @@ function Login() {
                             }}>Sign In</button>
                             <div className="modalBottom">
                                 <p>don't have an account? </p>
-                                <a href="/register" onClick={() => { setmodalIsOpen(false); setSignUpIsOpen(true); setSignInIsOpen(false) }} style={{ cursor: "pointer" }}>Sign Up</a>
+                                <a href="/register" onClick={() => { setmodalIsOpen(false); ; setSignInIsOpen(false) }} style={{ cursor: "pointer" }}>Sign Up</a>
                             </div>
                         </div>
                         : null}
