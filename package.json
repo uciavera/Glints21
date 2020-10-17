@@ -19,7 +19,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.6.0",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.3",
+    "homepage":"E:/QUDSY/job/glints/pr/qudsy/teamb-frontenda"
   },
   "scripts": {
     "start": "react-scripts start",
