@@ -14,9 +14,9 @@ import ReactStars from "react-rating-stars-component";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./MovieDetail.css"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
   Link
 } from "react-router-dom";
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
